@@ -20,8 +20,8 @@ const configPath = path.join(__dirname, '../data/autoStatus.json');
 // Initialize config file if it doesn't exist
 if (!fs.existsSync(configPath)) {
     fs.writeFileSync(configPath, JSON.stringify({ 
-        enabled: false, 
-        reactOn: false 
+        enabled: true, 
+        reactOn: true 
     }));
 }
 
